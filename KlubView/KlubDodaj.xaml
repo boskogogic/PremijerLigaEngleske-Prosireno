@@ -1,0 +1,54 @@
+﻿<Page x:Class="HCIProjekat2.KlubView.KlubDodaj"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HCIProjekat2.KlubView"
+      mc:Ignorable="d" 
+     Height="700" Width="900"
+      Title="KlubDodaj">
+
+	<Grid>
+		<Label Content="Novi klub" FontSize="36" Background="#FF01E2CE" Foreground="White" Height="48" Padding="350,5,5,5" FontFamily="Georgia" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" TextOptions.TextHintingMode="Fixed" FontWeight="Bold" />
+		<Grid Margin="0,-18,0,10">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+			</Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="143*"/>
+				<RowDefinition Height="68*"/>
+				<RowDefinition Height="81*"/>
+				<RowDefinition Height="78*"/>
+				<RowDefinition Height="71*"/>
+				<RowDefinition Height="267*"/>
+
+			</Grid.RowDefinitions>
+			<Label Grid.Row="0" FontSize="16" Margin="10,76,10,34" Content="Naziv kluba:"/>
+			<Label Grid.Row="1" FontSize="15" Margin="10,10,10,19" Content="Adresa kluba:"/>
+			<Label Grid.Row="2" FontSize="15" Margin="10,10,10,36" Content="Naziv stadiona: "/>
+			<Label Grid.Row="3" FontSize="15" Margin="10,10,10,38" Content="Naziv grada: "/>
+			<Label Grid.Row="4" FontSize="15" Margin="10,10,10,31" Content="Broj stanovnika : "/>
+			<Label Grid.Row="5" FontSize="15" Margin="10,10,10,227" Content="Drzava : "/>
+
+
+			<TextBox x:Name="NazivKlubaTextBox" Grid.Row="0" Grid.Column="1" FontSize="15" Margin="10,79,10,34"/>
+			<TextBox x:Name="AdresaKlubaTextBox" Grid.Row="1" Grid.Column="1" FontSize="15" Margin="10,10,10,28"/>
+			<TextBox x:Name="NazivStadionaTextBox" Grid.Row="2" Grid.Column="1" FontSize="15" Margin="10,15,10,36"/>
+			<TextBox x:Name="NazivGradaTextBox" Grid.Row="3" Grid.Column="1" FontSize="15" Margin="10,10,10,38"/>
+			<TextBox x:Name="BrojStanovnikaTextBox" Grid.Row="4" Grid.Column="1" FontSize="15" Margin="10,10,10,31"/>
+			<ComboBox x:Name="DrzavaComboBox" FontSize="15" Margin="10,10,10,227" Grid.Column="1" Grid.Row="5"/>
+		</Grid>
+		<Button x:Name="Dodaj" Content="DODAJ" HorizontalAlignment="Left" Margin="107,500,0,0" VerticalAlignment="Top" Width="160" Click="Button_Dodaj" Height="30" Background="#FF01E2CE" Foreground="White" BorderBrush="#FF37003C" FontSize="14" FontFamily="Georgia" FontWeight="Bold">
+			<Button.Effect>
+				<DropShadowEffect Opacity="0.5"/>
+			</Button.Effect>
+		</Button>
+		<Button x:Name="Nazad" Content="NAZAD" HorizontalAlignment="Left" Margin="556,500.163,0,169.837" VerticalAlignment="Center" Width="160" Click="Button_Nazad" Height="30" RenderTransformOrigin="0.507,-0.45" Background="#FF01E2CE" Foreground="#FFFDFDFD" FontSize="16" FontFamily="Georgia" FontWeight="Bold" UseLayoutRounding="False" BorderBrush="#FF37003C" OpacityMask="Black">
+			<Button.Effect>
+				<DropShadowEffect BlurRadius="1" Opacity="0.5"/>
+			</Button.Effect>
+		</Button>
+
+	</Grid>
+</Page>
