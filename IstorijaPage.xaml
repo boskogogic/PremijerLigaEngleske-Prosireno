@@ -1,0 +1,56 @@
+﻿<Page x:Class="HCIProjekat2.IstorijaPage"
+       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HCIProjekat2"
+      mc:Ignorable="d"
+      Title="HomePage" Height="700" Width="900">
+
+	<Grid x:Name="TextGrid" HorizontalAlignment="Left" Height="687" Margin="0,0,-3,-18" VerticalAlignment="Top" Width="896">
+
+		<StackPanel x:Name="Slika1" Margin="599,10,39,507" Background="#FF37003C" Height="170">
+			<Image Source="/HCIProjekat2;component/Image/StariLogo.png" Height="170" Margin="-1,0,-6,0" HorizontalAlignment="Center" Width="265" RenderTransformOrigin="0.5,0.5">
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="-0.163"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
+		</StackPanel>
+		<StackPanel x:Name="Slika2" Margin="599,217,39,310" Background="#FF37003C" Height="160">
+			<Image Source="/HCIProjekat2;component/Image/LogoHome.png" Height="160" Margin="11,0,-1,0" HorizontalAlignment="Center" Width="248" RenderTransformOrigin="0.5,0.5">
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="-0.163"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
+		</StackPanel>
+		<StackPanel x:Name="Slika3" Margin="599,433,39,94" Background="#FF37003C" Height="160">
+			<Image Source="/HCIProjekat2;component/Image/TrofejLogo.png" Height="150" Margin="-44,0,-62,0" HorizontalAlignment="Center" Width="364" RenderTransformOrigin="0.5,0.5">
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="-0.163"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
+		</StackPanel>
+		<StackPanel HorizontalAlignment="Left" Height="667" Margin="10,10,0,0" VerticalAlignment="Top" Width="521">
+			<TextBox HorizontalAlignment="Left" Height="373" Margin="10,0,0,0" TextWrapping="Wrap"  Width="501" Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" FontSize="24" TextDecorations="{x:Null}" Foreground="#FF37003C" FontStyle="Italic" FontFamily="Bookman Old Style" BorderBrush="{x:Null}" Text="Premijer liga (engl. Premier League) je najviša profesionalna fudbalska liga Engleske. U njoj se takmiči 20 klubova sa ostrva za titulu prvaka Engleske. Sezona traje od avgusta do maja u kojoj svaki tim odigra po 38 mečeva. Pod ovim nazivom igra se od 20. februara 1992. godine, kada su je formirali klubovi koji su se povukli iz Prve divizije Fudbalske lige, koja je bila najviša liga Engleske od 1888. do 1992. godine. Premijer liga je nedavno postala najgledanija sportska liga"/>
+			<TextBox HorizontalAlignment="Left" Height="271" Margin="10,0,0,0" TextWrapping="Wrap"  Width="501" Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" FontSize="24" TextDecorations="{x:Null}" Foreground="#FF37003C" FontStyle="Italic" FontFamily="Bookman Old Style" BorderBrush="{x:Null}" Text="Od nastanka 1992. ukupno se 49 klubova takmičilo u Premijer ligi, ali je samo sedam osvojilo titulu : Mančester junajted (13 titula), Čelsi (5), Mančester siti (5), Arsenal (3), Blekbern roversi (1), Lester siti (1) i Liverpul (1). Takođe, zaključno sa sezonom 2020/21, nijedan engleski trener nije osvojio Premijer ligu."/>
+
+		</StackPanel>
+
+
+	</Grid>
+</Page>

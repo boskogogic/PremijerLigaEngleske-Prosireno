@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CF5C30F3-A976-41AD-B742-1C397FC00CBD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HCIProjekat2</RootNamespace>
+    <AssemblyName>HCIProjekat2</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.28.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="DAO\TabelaDAO.cs" />
+    <Compile Include="HomePageEnglish.xaml.cs">
+      <DependentUpon>HomePageEnglish.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IgracEnglishView\IgracBrojNaDresuEnglish.xaml.cs">
+      <DependentUpon>IgracBrojNaDresuEnglish.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IgracEnglishView\IgracDodajEnglish.xaml.cs">
+      <DependentUpon>IgracDodajEnglish.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IgracEnglishView\IgraciIzmijeniBrojNaDresuEnglish.xaml.cs">
+      <DependentUpon>IgraciIzmijeniBrojNaDresuEnglish.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IgracEnglishView\IgracIzmijeniHomeEnglish.xaml.cs">
+      <DependentUpon>IgracIzmijeniHomeEnglish.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IgracEnglishView\IgracIzmijeniPozicijuEnglish.xaml.cs">
+      <DependentUpon>IgracIzmijeniPozicijuEnglish.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IgracEnglishView\IgracObrisiEnglish.xaml.cs">
+      <DependentUpon>IgracObrisiEnglish.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IgracEnglishView\IgracPageEnglish.xaml.cs">
+      <DependentUpon>IgracPageEnglish.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IgracEnglishView\IgracPozicijaEnglish.xaml.cs">
+      <DependentUpon>IgracPozicijaEnglish.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IgracEnglishView\IgracPrikazEnglish.xaml.cs">
+      <DependentUpon>IgracPrikazEnglish.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IgracView\IgracBrojNaDresu.xaml.cs">
+      <DependentUpon>IgracBrojNaDresu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IgracView\IgracDodaj.xaml.cs">
+      <DependentUpon>IgracDodaj.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IgracView\IgracIzmijeniBrojNaDresu.xaml.cs">
+      <DependentUpon>IgracIzmijeniBrojNaDresu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IgracView\IgracIzmijeniHome.xaml.cs">
+      <DependentUpon>IgracIzmijeniHome.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IgracView\IgracIzmijeniPoziciju.xaml.cs">
+      <DependentUpon>IgracIzmijeniPoziciju.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IgracView\IgracObrisi.xaml.cs">
+      <DependentUpon>IgracObrisi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IgracView\IgracPage.xaml.cs">
+      <DependentUpon>IgracPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IgracView\IgracPozicija.xaml.cs">
+      <DependentUpon>IgracPozicija.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IgracView\IgracPrikaz.xaml.cs">
+      <DependentUpon>IgracPrikaz.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IstorijaPageEnglish.xaml.cs">
+      <DependentUpon>IstorijaPageEnglish.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="KlubEnglishView\KlubDodajEnglish.xaml.cs">
+      <DependentUpon>KlubDodajEnglish.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="KlubEnglishView\KlubDodatneInformacijeEnglish.xaml.cs">
+      <DependentUpon>KlubDodatneInformacijeEnglish.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="KlubEnglishView\KlubPageEnglish.xaml.cs">
+      <DependentUpon>KlubPageEnglish.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="KlubView\KlubDodaj.xaml.cs">
+      <DependentUpon>KlubDodaj.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="KlubView\KlubDodatneInformacije.xaml.cs">
+      <DependentUpon>KlubDodatneInformacije.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="KlubView\KlubPage.xaml.cs">
+      <DependentUpon>KlubPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="KoloEnglishView\KoloPageEnglish.xaml.cs">
+      <DependentUpon>KoloPageEnglish.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="KoloView\KoloPage.xaml.cs">
+      <DependentUpon>KoloPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindowEnglish.xaml.cs">
+      <DependentUpon>MainWindowEnglish.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TabelaEnglishView\TabelaPageEnglish.xaml.cs">
+      <DependentUpon>TabelaPageEnglish.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TabelaView\TabelaPage.xaml.cs">
+      <DependentUpon>TabelaPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UtakmicaEnglishView\UtakmicaDetaljiEnglish.xaml.cs">
+      <DependentUpon>UtakmicaDetaljiEnglish.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UtakmicaEnglishView\UtakmicaIzmijeniEnglish.xaml.cs">
+      <DependentUpon>UtakmicaIzmijeniEnglish.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UtakmicaEnglishView\UtakmicaIzmijeniRezultatEnglish.xaml.cs">
+      <DependentUpon>UtakmicaIzmijeniRezultatEnglish.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UtakmicaEnglishView\UtakmicaPageEnglish.xaml.cs">
+      <DependentUpon>UtakmicaPageEnglish.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UtakmicaEnglishView\UtakmicaPostaveEnglish.xaml.cs">
+      <DependentUpon>UtakmicaPostaveEnglish.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UtakmicaEnglishView\UtakmicaRezultatEnglish.xaml.cs">
+      <DependentUpon>UtakmicaRezultatEnglish.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UtakmicaEnglishView\UtakmicaZavrsenaEnglish.xaml.cs">
+      <DependentUpon>UtakmicaZavrsenaEnglish.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UtakmicaView\UtakmicaDetalji.xaml.cs">
+      <DependentUpon>UtakmicaDetalji.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UtakmicaView\UtakmicaIzmijeni.xaml.cs">
+      <DependentUpon>UtakmicaIzmijeni.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UtakmicaView\UtakmicaIzmijeniRezultat.xaml.cs">
+      <DependentUpon>UtakmicaIzmijeniRezultat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UtakmicaView\UtakmicaPage.xaml.cs">
+      <DependentUpon>UtakmicaPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UtakmicaView\UtakmicaPostave.xaml.cs">
+      <DependentUpon>UtakmicaPostave.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UtakmicaView\UtakmicaRezultat.xaml.cs">
+      <DependentUpon>UtakmicaRezultat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UtakmicaView\UtakmicaZavrsena.xaml.cs">
+      <DependentUpon>UtakmicaZavrsena.xaml</DependentUpon>
+    </Compile>
+    <Page Include="HomePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HomePageEnglish.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IgracEnglishView\IgracBrojNaDresuEnglish.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IgracEnglishView\IgracDodajEnglish.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IgracEnglishView\IgraciIzmijeniBrojNaDresuEnglish.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IgracEnglishView\IgracIzmijeniHomeEnglish.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IgracEnglishView\IgracIzmijeniPozicijuEnglish.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IgracEnglishView\IgracObrisiEnglish.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IgracEnglishView\IgracPageEnglish.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IgracEnglishView\IgracPozicijaEnglish.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IgracEnglishView\IgracPrikazEnglish.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IgracView\IgracBrojNaDresu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IgracView\IgracDodaj.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IgracView\IgracIzmijeniBrojNaDresu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IgracView\IgracIzmijeniHome.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IgracView\IgracIzmijeniPoziciju.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IgracView\IgracObrisi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IgracView\IgracPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IgracView\IgracPozicija.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IgracView\IgracPrikaz.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IstorijaPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IstorijaPageEnglish.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="KlubEnglishView\KlubDodajEnglish.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="KlubEnglishView\KlubDodatneInformacijeEnglish.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="KlubEnglishView\KlubPageEnglish.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="KlubView\KlubDodaj.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="KlubView\KlubDodatneInformacije.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="KlubView\KlubPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="KoloEnglishView\KoloPageEnglish.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="KoloView\KoloPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAO\DogadjajDAO.cs" />
+    <Compile Include="DAO\IgracDAO.cs" />
+    <Compile Include="DAO\KlubDAO.cs" />
+    <Compile Include="DAO\KoloDAO.cs" />
+    <Compile Include="DAO\UtakmicaDAO.cs" />
+    <Compile Include="HomePage.xaml.cs">
+      <DependentUpon>HomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IstorijaPage.xaml.cs">
+      <DependentUpon>IstorijaPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="MainWindowEnglish.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TabelaEnglishView\TabelaPageEnglish.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TabelaView\TabelaPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UtakmicaEnglishView\UtakmicaDetaljiEnglish.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UtakmicaEnglishView\UtakmicaIzmijeniEnglish.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UtakmicaEnglishView\UtakmicaIzmijeniRezultatEnglish.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UtakmicaEnglishView\UtakmicaPageEnglish.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UtakmicaEnglishView\UtakmicaPostaveEnglish.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UtakmicaEnglishView\UtakmicaRezultatEnglish.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UtakmicaEnglishView\UtakmicaZavrsenaEnglish.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UtakmicaView\UtakmicaDetalji.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UtakmicaView\UtakmicaIzmijeni.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UtakmicaView\UtakmicaIzmijeniRezultat.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UtakmicaView\UtakmicaPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UtakmicaView\UtakmicaPostave.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UtakmicaView\UtakmicaRezultat.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UtakmicaView\UtakmicaZavrsena.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\Detalji_Utakmice.cs" />
+    <Compile Include="Model\Dogadjaj.cs" />
+    <Compile Include="Model\Drzava_Ujedinjeno_Kraljevstvo.cs" />
+    <Compile Include="Model\Igrac.cs" />
+    <Compile Include="Model\Klub.cs" />
+    <Compile Include="Model\Kolo.cs" />
+    <Compile Include="Model\Osoba.cs" />
+    <Compile Include="Model\Utakmica.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\StariLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\TrofejLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\klubIkona.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\PlayerLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\igrac.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\tabelaKolo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\UtakmicaCrtez.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\LogoHome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Zastava Engleske Zavrseno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Zastava Srbije zavrseno.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

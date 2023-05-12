@@ -1,0 +1,98 @@
+﻿<Page x:Class="HCIProjekat2.UtakmicaView.UtakmicaDetalji"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HCIProjekat2.UtakmicaView"
+      mc:Ignorable="d" 
+      Height="700" Width="900"
+      Title="UtakmicaDetalji">
+
+	<Grid Background="{DynamicResource {x:Static SystemColors.GradientInactiveCaptionBrushKey}}">
+		<Label Content="Detalji utakmice" FontSize="30" Background="#FF01E2CE" Foreground="White" Height="48" Padding="310,5,5,5" FontFamily="Georgia" TextOptions.TextFormattingMode="Display" TextOptions.TextHintingMode="Fixed" Width="900" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" />
+
+		<Grid Margin="10,404,722,164">
+			<Label Margin="0,0,10,105" Content="Minut" FontSize="14" FontWeight="Bold" FontFamily="Georgia" FontStyle="Italic"></Label>
+			<Label Margin="0,70,7,34" Content="Igrac" FontSize="14" FontWeight="Bold" FontFamily="Georgia" FontStyle="Italic"></Label>
+			<TextBlock x:Name="Minut3" Margin="6,28,3,76" RenderTransformOrigin="0.51,0.599" FontFamily="Georgia" FontSize="14">
+				<TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform ScaleY="-1" ScaleX="-1"/>
+						<SkewTransform/>
+						<RotateTransform Angle="-180.19"/>
+						<TranslateTransform X="0.339" Y="-0.763"/>
+					</TransformGroup>
+				</TextBlock.RenderTransform></TextBlock>
+			<TextBlock x:Name="Prezime3" Margin="4,96,4,8" RenderTransformOrigin="0.51,0.599" FontFamily="Georgia" FontSize="14">
+				<TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform ScaleY="-1" ScaleX="-1"/>
+						<SkewTransform/>
+						<RotateTransform Angle="-180.19"/>
+						<TranslateTransform X="0.339" Y="-0.763"/>
+					</TransformGroup>
+				</TextBlock.RenderTransform></TextBlock>
+		</Grid>
+
+		<Grid Margin="10,248,722,320">
+			<Label Margin="0,0,10,105" Content="Minut" FontSize="14" FontWeight="Bold" FontFamily="Georgia" FontStyle="Italic"></Label>
+			<Label Margin="0,70,7,34" Content="Igrac" FontSize="14" FontWeight="Bold" FontFamily="Georgia" FontStyle="Italic"></Label>
+			<TextBlock x:Name="Minut2" Margin="5,33,4,71" RenderTransformOrigin="0.479,0.462" FontFamily="Georgia" FontSize="14">
+				<TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform ScaleY="-1" ScaleX="-1"/>
+						<SkewTransform/>
+						<RotateTransform Angle="180.397"/>
+						<TranslateTransform X="-0.69" Y="1.551"/>
+					</TransformGroup>
+				</TextBlock.RenderTransform></TextBlock>
+			<TextBlock x:Name="Prezime2" Margin="4,96,6,8" RenderTransformOrigin="0.479,0.462" FontFamily="Georgia" FontSize="14">
+				<TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform ScaleY="-1" ScaleX="-1"/>
+						<SkewTransform/>
+						<RotateTransform Angle="180.397"/>
+						<TranslateTransform X="-0.69" Y="1.551"/>
+					</TransformGroup>
+				</TextBlock.RenderTransform></TextBlock>
+		</Grid>
+
+		<Grid Margin="10,69,722,499">
+			<Label Margin="0,0,10,105" Content="Minut" FontSize="14" FontWeight="Bold" FontFamily="Georgia" FontStyle="Italic"></Label>
+			<Label Margin="0,70,7,34" Content="Igrac" FontSize="14" FontWeight="Bold" FontFamily="Georgia" FontStyle="Italic"></Label>
+			<TextBlock x:Name="Minut1" FontFamily="Georgia" Margin="6,34,3,70" RenderTransformOrigin="-0.929,-3.058" FontSize="14">
+				<TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform ScaleY="-1" ScaleX="-1"/>
+						<SkewTransform/>
+						<RotateTransform Angle="180.449"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</TextBlock.RenderTransform></TextBlock>
+			<TextBlock x:Name="Prezime1" FontFamily="Georgia" Margin="6,100,3,4" RenderTransformOrigin="-0.929,-3.058" FontSize="14">
+				<TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform ScaleY="-1" ScaleX="-1"/>
+						<SkewTransform/>
+						<RotateTransform Angle="180.449"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</TextBlock.RenderTransform></TextBlock>
+		</Grid>
+		<Border BorderThickness="2" BorderBrush="#FF37003C" Margin="178,69,10,499">
+			<TextBlock x:Name="Opis1" Margin="2,8,-2,-2" FontFamily="Georgia" FontSize="14" Foreground="#FF37003C"/>
+		</Border>
+		<Border  BorderThickness="2" BorderBrush="#FF37003C" Margin="178,248,15,320">
+			<TextBlock x:Name="Opis2" Margin="2,8,-2,-2" FontFamily="Georgia" FontSize="14" Foreground="#FF37003C"></TextBlock>
+		</Border>
+		<Border  BorderThickness="2" BorderBrush="#FF37003C" Margin="183,404,10,164">
+			<TextBlock x:Name="Opis3" Margin="2,8,-2,-2" FontFamily="Georgia" FontSize="14" Foreground="#FF37003C"></TextBlock>
+		</Border>
+
+		<Button x:Name="Nazad" Click="Nazad_Click"  HorizontalAlignment="Left" Margin="346,587.44,0,80.41" VerticalAlignment="Center" Width="195.526"  Height="32.15" RenderTransformOrigin="0.507,-0.45" Background="#FF01E2CE" Foreground="#FFFDFDFD" FontSize="14" FontFamily="Georgia" FontWeight="Bold" UseLayoutRounding="False" BorderBrush="#FF37003C" OpacityMask="Black" Content="NAZAD">
+			<Button.Effect>
+				<DropShadowEffect BlurRadius="1" Opacity="0.5"/>
+			</Button.Effect>
+		</Button>
+	</Grid>
+</Page>

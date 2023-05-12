@@ -1,0 +1,56 @@
+﻿<Page x:Class="HCIProjekat2.IstorijaPageEnglish"
+       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HCIProjekat2"
+      mc:Ignorable="d"
+      Title="HomePage" Height="700" Width="900">
+
+	<Grid x:Name="TextGrid" HorizontalAlignment="Left" Height="687" Margin="0,0,-3,-18" VerticalAlignment="Top" Width="896">
+
+		<StackPanel x:Name="Slika1" Margin="599,10,39,507" Background="#FF37003C" Height="170">
+			<Image Source="/HCIProjekat2;component/Image/StariLogo.png" Height="170" Margin="-1,0,-6,0" HorizontalAlignment="Center" Width="265" RenderTransformOrigin="0.5,0.5">
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="-0.163"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
+		</StackPanel>
+		<StackPanel x:Name="Slika2" Margin="599,217,39,310" Background="#FF37003C" Height="160">
+			<Image Source="/HCIProjekat2;component/Image/LogoHome.png" Height="160" Margin="11,0,-1,0" HorizontalAlignment="Center" Width="248" RenderTransformOrigin="0.5,0.5">
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="-0.163"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
+		</StackPanel>
+		<StackPanel x:Name="Slika3" Margin="599,433,39,94" Background="#FF37003C" Height="160">
+			<Image Source="/HCIProjekat2;component/Image/TrofejLogo.png" Height="150" Margin="-44,0,-62,0" HorizontalAlignment="Center" Width="364" RenderTransformOrigin="0.5,0.5">
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="-0.163"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
+		</StackPanel>
+		<StackPanel HorizontalAlignment="Left" Height="667" Margin="10,10,0,0" VerticalAlignment="Top" Width="521">
+			<TextBox HorizontalAlignment="Left" Height="388" Margin="10,0,0,0" TextWrapping="Wrap"  Width="501" Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" FontSize="24" TextDecorations="{x:Null}" Foreground="#FF37003C" FontStyle="Italic" FontFamily="Bookman Old Style" BorderBrush="{x:Null}" Text="The Premier League is the highest professional football league in England. 20 clubs from the island are competing for the title of English champion. The season lasts from August to May, in which each team plays 38 matches. It has been played under this name since February 20, 1992, when it was formed by clubs that withdrew from the First Division of the Football League, which was the highest league in England from 1888 to 1992. The Premier League has recently become the most watched sports league"/>
+			<TextBox HorizontalAlignment="Left" Height="261" Margin="10,0,0,0" TextWrapping="Wrap"  Width="501" Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" FontSize="24" TextDecorations="{x:Null}" Foreground="#FF37003C" FontStyle="Italic" FontFamily="Bookman Old Style" BorderBrush="{x:Null}" Text="Since its inception in 1992, a total of 49 clubs have competed in the Premier League, but only seven have won the title: Manchester United (13 titles), Chelsea (5), Manchester City (5), Arsenal (3), Blackburn Rovers (1), Leicester City (1) and Liverpool (1). Also, at the end of the 2020/21 season, no English coach won the Premier League."/>
+
+		</StackPanel>
+
+
+	</Grid>
+</Page>

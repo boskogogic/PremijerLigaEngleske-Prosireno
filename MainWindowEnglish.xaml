@@ -1,0 +1,105 @@
+﻿<Window x:Class="HCIProjekat2.MainWindowEnglish"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HCIProjekat2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="820.5" Width="1250" AutomationProperties.IsOffscreenBehavior="Onscreen">
+
+	<Grid x:Name="HeaderGrid" HorizontalAlignment="Left" Height="63" VerticalAlignment="Top" Width="812" Margin="0,0,-8,0">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="395*"/>
+			<ColumnDefinition Width="417*"/>
+		</Grid.ColumnDefinitions>
+
+		<Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Width="1246" Background="{DynamicResource {x:Static SystemColors.InactiveSelectionHighlightBrushKey}}" Margin="0,0,-434,-10" Grid.ColumnSpan="2">
+			<Label Content="PREMIER LEAGUE ENGLAND" Margin="407,-1,9,-1" FontSize="48" Foreground="#FF37003C" FontFamily="Georgia" FontWeight="Bold"/>
+
+		</Border>
+		<Button x:Name="SrpskiButton"  Margin="152,10,188.248,3" RenderTransformOrigin="0.5,0.5" Click="SrpskiButton_Click" >
+			<Button.Background>
+				<ImageBrush ImageSource="Image/Zastava Srbije zavrseno.png"/>
+			</Button.Background>
+		</Button>
+		<Button  x:Name="EngleskiButton" Margin="45,0,270.248,-10" RenderTransformOrigin="0.541,0.283" VerticalContentAlignment="Top" Click="EngleskiButton_Click">
+			<Button.BorderBrush>
+				<ImageBrush/>
+			</Button.BorderBrush>
+			<Button.Background>
+				<ImageBrush ImageSource="Image/Zastava Engleske Zavrseno.png"/>
+			</Button.Background>
+		</Button>
+
+		<Image Source="/HCIProjekat2;component/Image/logo.png" Margin="281,5,391,-5" RenderTransformOrigin="0.372,0.5" Grid.ColumnSpan="2"></Image>
+
+
+		<Grid x:Name="MenuGrid" HorizontalAlignment="Left" Height="440" Margin="2,55,0,-432" VerticalAlignment="Top" Width="221">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="6*"/>
+				<ColumnDefinition Width="11*"/>
+			</Grid.ColumnDefinitions>
+			<Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="723" VerticalAlignment="Top" Width="286" Background="#FF37003C" Margin="0,16,-65,-299" Grid.ColumnSpan="2">
+				<ListView x:Name="ListViewMenu" Margin="-1,0,-1,161" Background="#FF37003C" BorderBrush="#FF37003C" Foreground="#FF37003C" Height="557" VerticalAlignment="Bottom">
+
+					<ListViewItem x:Name='Home' Height="60" BorderBrush="#FF0AECB8" Width="250" Margin="0,20,0,21">
+						<StackPanel Orientation="Horizontal" Width="250" Height="60">
+							<Image Source="/HCIProjekat2;component/Image/home.png" Width="67" Margin="0,0,0,6" />
+							<Button x:Name="HomeButton" Content ="HOME          " Width="155" Background="{x:Null}" Foreground="White" FontSize="20" FontFamily="Georgia" BorderBrush="{x:Null}" IsCancel="True" IsDefault="True" Click="Button_Click_Home" Margin="8,0,0,6" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+						</StackPanel>
+
+
+
+					</ListViewItem>
+
+
+					<ListViewItem x:Name="Klub" Height="60" BorderBrush="#FF0AECB8" Width="250" Margin="0,0,0,20">
+						<StackPanel Orientation="Horizontal" Width="240">
+							<Image Source="/HCIProjekat2;component/Image/klubIkona.png" Width="76" Height="53" />
+							<Button x:Name="KlubButton" Content ="     CLUB" Width="143" Background="{x:Null}" Foreground="White" FontSize="20" FontFamily="Georgia" BorderBrush="{x:Null}" IsCancel="True" IsDefault="True" Click="Buton_Click_Klub" Padding="-32,1,1,1"/>
+						</StackPanel>
+					</ListViewItem>
+
+					<ListViewItem x:Name="Igrac" Height="60" BorderBrush="#FF0AECB8" Width="250" Margin="0,0,0,20">
+						<StackPanel Orientation="Horizontal" Width="240" Height="50">
+							<Image Source="/HCIProjekat2;component/Image/igrac.png" Width="75" />
+							<Button x:Name="IgracButton" Content ="    PLAYER" Width="137" Background="{x:Null}" Foreground="White" FontSize="20" FontFamily="Georgia" BorderBrush="{x:Null}" IsCancel="True" IsDefault="True" Click="Button_Click_Igrac" Padding="-21,1,1,1"/>
+						</StackPanel>
+					</ListViewItem>
+
+					<ListViewItem x:Name="Kolo" Height="60" BorderBrush="#FF0AECB8" Width="250" Margin="0,0,0,20">
+						<StackPanel Orientation="Horizontal" Width="240" Height="60">
+							<Image Source="/HCIProjekat2;component/Image/tabelaKolo.png" Width="79" />
+							<Button x:Name="KoloButton" Content =" CIRCUIT" Width="143" Background="{x:Null}" Foreground="White" FontSize="20" FontFamily="Georgia" BorderBrush="{x:Null}" IsCancel="True" IsDefault="True" Click="Button_Click_Kolo" Padding="-20,1,1,1"/>
+
+						</StackPanel>
+					</ListViewItem>
+
+					<ListViewItem x:Name="Tabela" Height="60" BorderBrush="#FF0AECB8" Width="250" Margin="0,0,0,20">
+						<StackPanel Orientation="Horizontal" Width="240" Height="60">
+							<Image Source="/HCIProjekat2;component/Image/tabelaKolo.png" Width="79" />
+							<Button x:Name="TabelaButton" Content ="TABLE" Width="143" Background="{x:Null}" Foreground="White" FontSize="20" FontFamily="Georgia" BorderBrush="{x:Null}" IsCancel="True" IsDefault="True" Click="Button_Click_Tabela" Padding="-20,1,1,1"/>
+
+						</StackPanel>
+					</ListViewItem>
+
+					<ListViewItem x:Name="Utakmica" Height="60" BorderBrush="#FF0AECB8" Width="250">
+						<StackPanel Orientation="Horizontal" Width="250" Height="60">
+							<Image Source="/HCIProjekat2;component/Image/UtakmicaCrtez.png" Width="78" Margin="0,-12,0,0" />
+							<Button x:Name="UtakmicaButton" Content ="GAME" Width="143" Background="{x:Null}" Foreground="White" FontSize="20" FontFamily="Georgia" BorderBrush="{x:Null}" IsCancel="True" IsDefault="True" Click="Button_Click_Utakmica" Padding="10,1,1,1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+						</StackPanel>
+					</ListViewItem>
+
+				</ListView>
+			</Border>
+		</Grid>
+
+		<Frame x:Name="DashBoardFrame" Content ="" HorizontalAlignment="Left" Height="710"  Width="936" Margin="288,73,-412,-720"  VerticalAlignment="Top" NavigationUIVisibility="Hidden" Grid.ColumnSpan="2">
+		</Frame>
+
+
+	</Grid>
+
+
+</Window>
+

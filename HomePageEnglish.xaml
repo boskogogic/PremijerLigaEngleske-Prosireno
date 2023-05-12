@@ -1,0 +1,32 @@
+﻿<Page x:Class="HCIProjekat2.HomePageEnglish"
+       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HCIProjekat2"
+      mc:Ignorable="d"
+      Title="HomePage" Height="700" Width="900">
+
+	<Grid x:Name="TextGrid" HorizontalAlignment="Left" Height="687" Margin="0,0,-3,-18" VerticalAlignment="Top" Width="896">
+
+		<StackPanel x:Name="Logo" Margin="536,126,22,311" Background="#FF37003C">
+			<Image Source="/HCIProjekat2;component/Image/LogoHome.png" Height="255" Margin="-39,0,-14,0" HorizontalAlignment="Center" Width="391" RenderTransformOrigin="0.5,0.5">
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="-0.163"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
+		</StackPanel>
+		<StackPanel HorizontalAlignment="Left" Height="667" Margin="10,10,0,0" VerticalAlignment="Top" Width="521">
+			<TextBox HorizontalAlignment="Left" Height="659" Margin="10,0,0,0" TextWrapping="Wrap" Text="                                                                                                  The Premier League of England is a single page application, which aims to represent clubs, players and football championship matches on the British Isles, along with match details and certain events that took place during the match itself.                                                             
+					 
+                                                                                                                                                                                                                                                                                                                         From the functionality, you as a user are offered to browse the clubs, and add a specific club if you wish. Also, for each club it is possible to see the available players, add a new player as well as all the matches played in the championship so far, as well as details from the given matches." Width="501" Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" FontSize="24" TextDecorations="{x:Null}" Foreground="#FF37003C" FontStyle="Italic" FontFamily="Bookman Old Style" BorderBrush="{x:Null}"/>
+		</StackPanel>
+
+
+	</Grid>
+</Page>

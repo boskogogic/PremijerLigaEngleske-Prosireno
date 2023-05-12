@@ -1,0 +1,30 @@
+﻿<Page x:Class="HCIProjekat2.HomePage"
+       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HCIProjekat2"
+      mc:Ignorable="d"
+      Title="HomePage" Height="700" Width="900">
+
+	<Grid x:Name="TextGrid" HorizontalAlignment="Left" Height="687" Margin="0,0,-3,-18" VerticalAlignment="Top" Width="896">
+
+		<StackPanel x:Name="Logo" Margin="536,126,22,311" Background="#FF37003C">
+			<Image Source="/HCIProjekat2;component/Image/LogoHome.png" Height="255" Margin="-39,0,-14,0" HorizontalAlignment="Center" Width="391" RenderTransformOrigin="0.5,0.5">
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="-0.163"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
+		</StackPanel>
+		<StackPanel HorizontalAlignment="Left" Height="667" Margin="10,10,0,0" VerticalAlignment="Top" Width="521">
+			<TextBox HorizontalAlignment="Left" Height="659" Margin="10,0,0,0" TextWrapping="Wrap" Text="Aplikacija PREMIJER LIGA ENGLESKE predstavlja single page aplikaciju, koja za cilj ima reprezentaciju klubova, igrača, te utakmice fudbalskog prvenstva na britanskom ostrvu, zajedno sa detaljima utakmice i određenim događajima koji su se desili na samoj utakmici.                                                                                                                                                                    &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Od funkcionalnosti, Vama kao korisniku, ponuđeno je da pregledate klubove, te dodate određeni klub ako to želite. Takođe, za svaki klub moguće je vidjeti raspoložive igrače, dodati novog igraca kao i sve odigrane utakmice u prvenstvu do sada, kao i detalje sa datih utakmica.&#xD;&#xA;" Width="501" Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" FontSize="24" TextDecorations="{x:Null}" Foreground="#FF37003C" FontStyle="Italic" FontFamily="Bookman Old Style" BorderBrush="{x:Null}"/>
+		</StackPanel>
+
+
+	</Grid>
+</Page>
